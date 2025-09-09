@@ -1,0 +1,5 @@
+first:
+	gcc *.c -o $@
+
+clean:
+	rm -rf ./first
