@@ -1,0 +1,8 @@
+third: *.c
+	gcc $^ -o $@
+
+%.o: %.c
+	gcc -c $<
+
+clean:
+	rm -rf *.o ./third
