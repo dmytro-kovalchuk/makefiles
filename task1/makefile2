@@ -1,0 +1,11 @@
+second: main.o func.o
+	gcc main.o func.o -o second
+
+main.o:
+	gcc -c main.c
+
+func.o:
+	gcc -c func.c
+
+clean:
+	rm -rf *.o ./second
